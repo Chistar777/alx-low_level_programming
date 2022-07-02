@@ -2,8 +2,10 @@
 #include <time.h>
 #include <stdlib.h>
 /**
- * main - main block 
- * Descrription: get a random number and check its last digit, compare it with 5
+ * main - main block
+ * Descrription: get a random number and check its last digit,
+ * compare it with 5
+ *
  * Return: 0
  */
 int main(void)
@@ -11,7 +13,7 @@ int main(void)
 	int n;
 	int last;
 
-	srand (time(0));
+	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	last = n % 10;
 
