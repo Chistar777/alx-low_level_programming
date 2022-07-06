@@ -1,38 +1,23 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
- * print_to_98 - Check main
- * @n: input integer
- * Description: Function that prints natural number
- * from n to 98
- * Return: nothing
+ * print_to_98 to - Print al naturel number from input 98
+ * in order to seprated by a comma followed by aspace.
+ * @n: the number begin counting at.
  */
-void print_to_98(int n)
+print_to_98(int n)
 {
-	if (n <= 98)
+	if (n >= 98)
 	{
-		for (; n <= 98; n++)
-		{
-			printf("%d", n);
-
-			if (n == 98)
-				continue;
-			printf(", ");
-		}
-		printf("\n");
+		while (n > 98)
+			printf("%d, ", n--);
+			printf("%d/n", n);
 	}
 
 	else
 	{
-		for (; n >= 98; n--)
-		{
-			printf("%d", n);
-
-			if (n == 98)
-				continue;
-			printf(",");
-		}
-		printf("\n");
+		while (n > 98)
+			printf("%d, ", n++);
+			printf("%d/n", n);
 	}
 }
