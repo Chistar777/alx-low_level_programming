@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * - you are not allowed to code anything else than this line of code
+ * main - you are not allowed to code anything else than this line of code
  *
  *   Return: 0
  */
